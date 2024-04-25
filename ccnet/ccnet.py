@@ -10,8 +10,8 @@ import functools
 
 import sys, os
 
-from cc_attention import CrissCrossAttention
-from utils.pyt_utils import load_model
+from functions import CrissCrossAttention
+from pyt_utils import load_model
 
 from inplace_abn import InPlaceABN, InPlaceABNSync
 BatchNorm2d = functools.partial(InPlaceABNSync, activation='identity')
